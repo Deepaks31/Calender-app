@@ -17,20 +17,20 @@ A fully responsive event scheduling application built using **React + Vite**. Th
 ## 📁 Folder Structure
 
 src/<br>
-│
-├── components/
-│ ├── Calendar.jsx  # Monthly view
-│ ├── Header.jsx  # Displays nearest upcoming event
-│ ├── ProgramsPage.jsx  # Lists all events
-│ ├── Sidebar.jsx  # Navigation panel
-│ └── EventCard.jsx  # Event display in calendar
-│
-├── data/
-│ └── events.json # Static list of events
-│
-├── App.jsx
-├── main.jsx
-└── index.css
+│<br>
+├── components/<br>
+│ ├── Calendar.jsx  # Monthly view<br>
+│ ├── Header.jsx  # Displays nearest upcoming event<br>
+│ ├── ProgramsPage.jsx  # Lists all events<br>
+│ ├── Sidebar.jsx  # Navigation panel<br>
+│ └── EventCard.jsx  # Event display in calendar<br>
+│<br>
+├── data/<br>
+│ └── events.json # Static list of events<br>
+│<br>
+├── App.jsx<br>
+├── main.jsx<br>
+└── index.css<br>
 
 ## 🛠 Installation
 
