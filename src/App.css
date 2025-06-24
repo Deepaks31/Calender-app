@@ -1,4 +1,4 @@
-/* General Layout */
+
 .app-container {
   display: flex;
   height: 100vh;
@@ -175,4 +175,24 @@
 .date-number {
   font-size: 12px;
   font-weight: bold;
+}
+
+
+
+@media (max-width: 768px) {
+  .app-container {
+    flex-direction: column;
+  }
+
+  .sidebar {
+    width: 100%;
+  }
+
+  .main-content {
+    padding: 10px;
+  }
+
+  .calendar-grid {
+    grid-template-columns: repeat(2, 1fr); /* fewer columns for small screens */
+  }
 }
