@@ -16,7 +16,7 @@ A fully responsive event scheduling application built using **React + Vite**. Th
 
 ## 📁 Folder Structure
 
-src/
+src/<br>
 │
 ├── components/
 │ ├── Calendar.jsx  # Monthly view
