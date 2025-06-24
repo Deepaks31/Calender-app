@@ -19,11 +19,11 @@ A fully responsive event scheduling application built using **React + Vite**. Th
 src/
 │
 ├── components/
-│ ├── Calendar.jsx # Monthly view
-│ ├── Header.jsx # Displays nearest upcoming event
-│ ├── ProgramsPage.jsx # Lists all events
-│ ├── Sidebar.jsx # Navigation panel
-│ └── EventCard.jsx # Event display in calendar
+│ ├── Calendar.jsx  # Monthly view
+│ ├── Header.jsx  # Displays nearest upcoming event
+│ ├── ProgramsPage.jsx  # Lists all events
+│ ├── Sidebar.jsx  # Navigation panel
+│ └── EventCard.jsx  # Event display in calendar
 │
 ├── data/
 │ └── events.json # Static list of events
