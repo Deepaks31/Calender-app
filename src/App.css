@@ -1,42 +1,178 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+/* General Layout */
+.app-container {
+  display: flex;
+  height: 100vh;
+  width: 100vw; 
+  font-family: sans-serif;
+}
+.events-page {
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+}
+
+.event-list {
+  list-style: none;
+  padding: 0;
+}
+
+.event-item {
+  margin-bottom: 15px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+}
+
+
+.main-content {
+  flex: 1;
+  padding: 20px;
+  background-color: #f9f9f9;
+  overflow-y: auto;
+}
+
+/* Sidebar */
+.sidebar {
+  width: 250px;
+  background-color: #fff;
+  padding: 20px;
+  border-right: 1px solid #ddd;
 }
 
 .logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.nav {
+  margin-bottom: 30px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+.nav-item {
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
+  border-radius: 5px;
 }
 
-.card {
-  padding: 2em;
+.nav-item:hover {
+  background-color: #f0f0f0;
 }
 
-.read-the-docs {
-  color: #888;
+.nav-item.active {
+  background-color: #e0e0e0;
+}
+
+.badge {
+  background-color: red;
+  color: white;
+  font-size: 12px;
+  border-radius: 50%;
+  padding: 2px 6px;
+}
+
+.user-info {
+  position: absolute;
+  bottom: 20px;
+  font-size: 12px;
+}
+
+/* Header */
+.header {
+  background-color: #fff;
+  padding: 15px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-left .weekly {
+  color: green;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.title {
+  font-size: 22px;
+  font-weight: bold;
+  margin: 5px 0;
+}
+
+.details {
+  color: #555;
+}
+
+.edit-btn {
+  padding: 8px 12px;
+  border: 1px solid #ccc;
+  background-color: white;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+/* Calendar */
+.calendar {
+  background-color: #fff;
+  padding: 15px;
+  border-radius: 8px;
+}
+
+.calendar-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.nav-btn {
+  padding: 6px 10px;
+  border-radius: 6px;
+  background-color: #f5f5f5;
+  cursor: pointer;
+}
+
+.weekdays {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.calendar-grid {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 4px;
+}
+
+.calendar-cell {
+  border: 1px solid #ccc;
+  min-height: 60px;
+  padding: 4px;
+}
+
+.calendar-cell.today {
+  background-color: #dbeafe;
+}
+
+.event {
+  font-size: 10px;
+  margin-top: 4px;
+  padding: 2px;
+  background-color: #def7ec;
+  color: #065f46;
+  border-radius: 3px;
+}
+
+.empty {
+  background-color: transparent;
+}
+
+.date-number {
+  font-size: 12px;
+  font-weight: bold;
 }

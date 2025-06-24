@@ -1,12 +1,41 @@
-# React + Vite
+# 🗓️ React Calendar Event Scheduling App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A fully responsive event scheduling application built using **React + Vite**. This project displays events on a calendar grid and allows users to view a full list of events on a dedicated Programs page. Event data is loaded from a static JSON file.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 📦 Features
 
-## Expanding the ESLint configuration
+- 📅 **Monthly calendar view** with events shown on the correct dates
+- 🔔 **Sidebar navigation** with links to pages like Home, Programs, and Events
+- 📋 **Events page** shows a card layout of all events from the JSON file
+- 🟢 **Upcoming event preview** displayed at the top
+- 🎨 Clean UI using CSS 
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## 📁 Folder Structure
+
+src/
+│
+├── components/
+│ ├── Calendar.jsx # Monthly view
+│ ├── Header.jsx # Displays nearest upcoming event
+│ ├── ProgramsPage.jsx # Lists all events
+│ ├── Sidebar.jsx # Navigation panel
+│ └── EventCard.jsx # Event display in calendar
+│
+├── data/
+│ └── events.json # Static list of events
+│
+├── App.jsx
+├── main.jsx
+└── index.css
+
+## 🛠 Installation
+
+```bash
+git clone https://github.com/Deepaks31/Calender-app.git
+cd calendar-app
+npm install
+npm run dev
